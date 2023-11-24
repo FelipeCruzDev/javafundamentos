@@ -39,15 +39,16 @@ public class exercicio14 {
 					cont ++;
 			}if (cont == 5) {
 				System.out.println(nome +  "É O ASSASSINO!");
+				
+			}if (cont == 2) {
+				System.out.println(nome+"É SUSPEITO");
 			}if (cont ==3 || cont ==4) {
-				System.out.println(nome+  "É SUSPEITO");
+				System.out.println(nome+  "É CUMPLICE");
 			
-			}if (cont <3) {
+			}if (cont < 1) {
 				
 			System.out.println(nome+  "É INOCENTE");
 			}
 	}
 }
 			
-			
-		
