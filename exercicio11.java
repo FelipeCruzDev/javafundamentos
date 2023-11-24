@@ -17,7 +17,7 @@ public class exercicio11 {
         System.out.println("DIGITE UM NUMERO:");
         int numero = input.nextInt();
 
-        if (numero != 1 && numero != 2 && numero != 3 && numero != 4 && numero != 5 && numero != 6 && numero != 7) {
+        if (numero <= 0 || numero >= 8) {
             System.out.println("NUMERO INVALIDO");
         }
         if (numero == 1) {
