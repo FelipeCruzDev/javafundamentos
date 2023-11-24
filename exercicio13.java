@@ -11,11 +11,11 @@ public class exercicio13 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("DIGITE UMA LETRA [M/F]:");
-        char letra = input.next().charAt(0);
+        String letra = input.next();
 
-        if (letra == 'M'|| letra == 'm'){
+        if (letra.equals("M")|| letra.equals("m"){
             System.out.println("MASCULINO");
-        }if (letra == 'F'|| letra == 'f') {
+        }if (letra.equals("F") || letra.equals("f") {
             System.out.println("FEMININO");
         }
     }
