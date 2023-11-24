@@ -13,9 +13,9 @@ public class exercicio13 {
         System.out.println("DIGITE UMA LETRA [M/F]:");
         String letra = input.next();
 
-        if (letra.equals("M")|| letra.equals("m"){
+        if (letra.equals("M")|| letra.equals("m")){
             System.out.println("MASCULINO");
-        }if (letra.equals("F") || letra.equals("f") {
+        }if (letra.equals("F") || letra.equals("f")) {
             System.out.println("FEMININO");
         }
     }
