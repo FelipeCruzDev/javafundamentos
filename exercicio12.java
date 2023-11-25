@@ -29,3 +29,17 @@ public class exercicio12 {
         }
     }
 }
+
+//OPERADOR TERNARIO
+package fundamentos;
+import java.util.Scanner;
+public class exercicio20 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Diga a primeira nota: ");
+        float nota1 = input.nextFloat();
+        System.out.println("Diga a Segunda nota: ");
+        float nota2 = input.nextFloat();
+        float resultado = (nota1 + nota2) / 2;
+        String result = resultado > 7 ? "ALUNO APROVADO, PARABÉNS" : (resultado > 4 ? "ALUNO EM RECUPERAÇÃO" : "ALUNO REPROVADO");
+        System.out.println("A MEDIA É: "+resultado +result);
