@@ -1,28 +1,44 @@
-package academy.aulas.maratonajava.introducao;
 import java.util.Scanner;
 /*
 Escreva um aplicativo em Java que recebe
 inteiro e mostra os números pares e ímpares
-(separados), de 1 até esse inteiro.
+(separados), de 1 até esse inteiro e mostre a quantidade
+de numeros pares e impares achados
  */
-import java.util.Scanner;
 
-public class exercicioWhile03 {
+public class exercicioWhile04 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        int num = 1;
+        int contimpar = 0;
+        int contpar =0;
+        
         System.out.print("Digite um número inteiro: ");
-        int num = input.nextInt();
-        System.out.println("Números pares:");
-        int i = 2;
-        while (i <= num) {
-            System.out.print(i + " ");
-            i += 2;
+        int num1 = input.nextInt();
+
+        System.out.print("Impares: ");
+        while (num <= num1) {
+        	if(num % 2!= 0) {
+        		System.out.print(num + " ");
+        		contimpar++;
+        		
         }
-        System.out.println("\nNúmeros ímpares:");
-        i = 1;
-        while (i <= num) {
-            System.out.print(i + " ");
-            i += 2;
+        	num++;
         }
-    }
+        
+        num = 1;
+        System.out.print("\nPares: ");
+        while (num <= num1) {
+        	if(num % 2 == 0) {
+        		System.out.print(num + " ");
+        		contpar++;
+        	
+        }
+        	num++;
+        }
+       System.out.print("\nQUANTIDADE DE NUMEROS IMPARES:"+contimpar ); 
+       System.out.print("\nQUANTIDADE DE NUMEROS PARES:"+contpar ); 
+
+        
+    }	
 }
