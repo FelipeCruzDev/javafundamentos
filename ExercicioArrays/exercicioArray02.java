@@ -1,6 +1,6 @@
-package academy.aulas.maratonajava.introducao;
+package repeticoes;
 
-import java.util.*;
+import java.util.Scanner;
 
 /*
 Escreva um código que
@@ -8,13 +8,13 @@ receba uma nota de 5 alunos,
 guarde todas num array notas.
 Depois calcule a média da turma.
  */
-public class exercicioArray02 {
+public class array {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int alunos = 5;
-        float[] notas = new float[alunos];
+   
+        float[] notas = new float[5];
 
-        for (int i = 0; i < alunos; i++) {
+        for (int i = 0; i < notas.length; i++) {
             System.out.println("DIGITE UMA NOTA:");
             notas[i] = input.nextFloat();
         }
@@ -24,10 +24,8 @@ public class exercicioArray02 {
             somaNotas += nota;
         }
 
-        float media = somaNotas / alunos;
+        float media = somaNotas / notas.length;
         System.out.println("Média da turma: " + media);
 
-        input.close();
     }
 }
-
