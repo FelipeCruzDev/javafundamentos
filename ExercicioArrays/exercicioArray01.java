@@ -1,7 +1,5 @@
 package academy.aulas.maratonajava.introducao;
 
-import javax.swing.*;
-
 public class exercicioArray01 {
     /*
 Para cada conjunto de
